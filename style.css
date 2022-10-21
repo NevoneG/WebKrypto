@@ -1,0 +1,2103 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/*menu*/
+.wrap {
+    max-width: 1440px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+
+header {
+    height: 10vw;
+    width: 100vw;
+}
+
+nav {
+    /* float: left; */
+    width: 100%;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+
+}
+
+nav a {
+    display: block;
+    line-height: 100px;
+    font-size: 25px;
+    color: black;
+    text-decoration: none;
+    font-family: 'Montserrat', Arial, sans-serif;
+    padding: 10px 0px 30px 30px;
+    text-transform: uppercase;
+    margin-left: 50px;
+}
+
+nav i {
+    width: 40px;
+    margin-right: 15px;
+    transition: 0.4s;
+}
+
+nav a:hover {
+    color: #E86C12;
+
+}
+
+nav a:hover i {
+    margin-right: 10px;
+
+}
+
+
+header {
+    float: left;
+    height: 400px;
+    width: calc(100% - 300px);
+    /* background-color: blue; */
+    background-size: cover;
+    background-position: center;
+
+}
+
+
+
+
+section {
+    margin-top: 100px;
+}
+
+section h1 {
+    font-size: 30px;
+    text-transform: uppercase;
+    font-family: 'Montserrat', Arial, sans-serif;
+    background-color: #E86C12;
+    color: #000;
+    padding: 10px 0;
+    text-align: center;
+}
+
+
+/*menuend*/
+
+/* Backtotop */
+#returnTop {
+    position: fixed;
+    right: -3%;
+    top: 80%;
+    width: 8em;
+    margin-top: -0.5em;
+    list-style: none;
+    z-index: 1;
+
+}
+
+/*notify*/
+#notify {
+    position: fixed;
+    left: 1%;
+    bottom: 69%;
+    width: 8em;
+    margin-top: -0.5em;
+    list-style: none;
+    z-index: 1;
+
+
+}
+
+
+.contactCyl {
+    position: fixed;
+    left: -6%;
+    bottom: 80%;
+    width: 100px;
+    border-radius: 30%;
+    height: 180px;
+    background-color: #E86C12;
+    transition: 1s;
+
+}
+
+.contactCyl span {
+    color: white;
+}
+
+.contactCyl>p {
+    color: black;
+    margin-top: 15px;
+    margin-left: 10px;
+}
+
+/* .contactCyl+p+p {
+    color: red;
+    margin-top: 40px;
+    margin-left: 10px;
+} */
+
+#notify:hover .contactCyl {
+    left: 1%;
+    bottom: 75%;
+    transition: 1s;
+    animation: linear;
+}
+
+
+
+#returnTop li a {
+    list-style-type: none;
+    text-decoration: none;
+    text-align: center;
+    font-weight: 700;
+    color: black;
+    line-height: 400%;
+    margin: 0;
+    padding: 0;
+}
+
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+html {
+    font-family: 'Montserrat', Arial, sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+
+
+.about,
+.quotes {
+    margin: 10px auto;
+    text-align: center;
+}
+
+.about h1,
+.quotes h1 {
+    font-size: 60px;
+    color: black;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+
+.op1 img {
+    height: 35vw;
+}
+
+select {
+    width: 30vh;
+    height: 5vh;
+}
+
+/* ABOUT */
+.about h2 {
+    background-color: #E86C12;
+    padding: 20px 0 20px 10vw;
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Montserrat';
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: normal;
+    margin-bottom: 20px;
+    color: black;
+
+}
+
+article h2 {
+    background-color: #E86C12;
+    padding: 20px 0 20px 5vw;
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Montserrat';
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: black;
+
+}
+
+.about img {
+    float: left;
+    padding: 0px 30px;
+}
+
+.about p {
+    font-size: 22px;
+    padding-right: 40px;
+    line-height: 2;
+}
+
+.about article {
+    margin-bottom: 30px;
+    transition: 1s linear;
+}
+
+.about .art2,
+.about .art4 {
+    transform: translateX(-100vw);
+}
+
+.about .art2.active,
+.about .art4.active,
+.about .art3.active {
+    transform: translateX(0);
+}
+
+.about .art3 {
+    transform: translateX(100vw);
+
+}
+
+
+/* QUOTES */
+.quotes {
+    padding: 0 20px;
+}
+
+.quotes p {
+    font-size: 22px;
+    margin: 20px 0;
+}
+
+.quotes p span {
+    color: #E86C12;
+}
+
+.quotes article {
+    margin-bottom: 60px;
+}
+
+.quotes img {
+    display: block;
+    width: 100%;
+}
+
+.quotes article {
+    transform: scale(0);
+    transition: .8s linear;
+}
+
+.quotes article.active {
+    transform: scale(1);
+}
+
+section h1 {
+    font-size: 50px;
+}
+
+section div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-basis: 60vh;
+}
+
+.container {
+    flex-basis: 100%;
+    height: 220vh;
+    flex-wrap: wrap;
+}
+
+input,
+textarea,
+button,
+.socials {
+    padding: 6px;
+    outline: none;
+    margin: 6px 0;
+    justify-content: center;
+    text-align: center;
+    width: 60vh;
+}
+
+button {
+    cursor: pointer;
+}
+
+.socials {
+    display: flex;
+    flex-direction: row;
+}
+
+.fb1 a {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.fb1 img {
+    margin-bottom: 5px;
+    margin-top: 5px;
+
+}
+
+
+.map {
+    height: 80vh;
+}
+
+/* textarea {
+    height: 10vh;
+} */
+
+.flexbitcontainer {
+    display: flex;
+    flex-direction: row;
+}
+
+.op2 img {
+    width: 15vh;
+    flex-basis: 10%;
+}
+
+.op2 p {
+    flex-basis: 60%;
+    text-align: center;
+}
+
+.verify {
+    width: 100vw;
+}
+
+/* Footer */
+footer {
+    /* display: flex; */
+    line-height: 60px;
+    height: 8vh;
+    width: 100vw;
+    background-color: #E86C12;
+    text-align: center;
+    color: black;
+    font-size: 25px;
+}
+
+.contactForm {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+
+
+/* blog */
+body {
+    font-family: 'Monseratt', Arial, sans-serif;
+    padding: 20px;
+    background: white;
+}
+
+/* Header blog*/
+.header {
+    margin-top: 25px;
+    padding: 30px;
+    font-size: 40px;
+    text-align: center;
+    background: #E86C12;
+}
+
+.leftcolumn {
+    float: left;
+    width: 70%;
+}
+
+/* Right column */
+.rightcolumn {
+    float: left;
+    width: 30%;
+    padding-left: 20px;
+}
+
+/* Fake img */
+.fakeimg {
+    width: 100%;
+    padding: 20px;
+}
+
+
+.card {
+    background-color: white;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+.card p {
+    margin-top: 40px;
+    font-size: 20px;
+}
+
+
+.blog1 a img {
+    width: 37vh;
+    height: auto;
+}
+
+/* Clear floats */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.rightcolumn {
+    text-align: center;
+}
+
+.rightcolumn p {
+    border-style: solid;
+    text-justify: center;
+    border: ridge #E86C12;
+    border-width: 3px 3px;
+    border-radius: 3%;
+    padding: 10px;
+    margin-left: 20px;
+    margin-bottom: 15px;
+    width: 90%;
+
+}
+
+.blogimg a img {
+    height: auto;
+    width: 36vh;
+}
+
+.beffoot {
+    width: 100vh;
+    height: 10vh;
+    margin-bottom: 50px;
+    margin-top: 20px;
+    font-size: 25px;
+}
+
+.rightcolumn {
+    margin-top: 5px;
+    border: ridge #E86C12;
+    border-width: 3px 3px;
+    border-radius: 3%;
+
+}
+
+
+
+
+/* Footer */
+.footer {
+    padding: 10px;
+    font-family: 'Monseratt', Arial, sans-serif;
+    text-align: center;
+    background: #E86C12;
+    margin-top: 10px;
+    font-size: 22px;
+}
+
+h1 {
+    width: 100%;
+}
+
+@media (min-height:320px) and (max-height:500px) {
+
+    .art1,
+    .art2,
+    .art3,
+    .art4 {
+        height: 150vh;
+        width: 100vw;
+    }
+
+    .op1 {
+        min-height: 80vh;
+    }
+
+
+    .flexbitcontainer {
+        display: none;
+    }
+
+}
+
+
+@media (min-width:300px) and (max-width:379px) {
+    .wrap {
+        display: flex;
+    }
+
+    header img {
+        display: none;
+    }
+
+    nav ul {
+        flex-direction: column;
+        flex-wrap: wrap;
+        padding: 0px;
+
+    }
+
+    nav ul li a {
+        font-size: 25px;
+        width: 100%;
+    }
+
+    html {
+        font-size: 15px;
+        overflow-y: scroll;
+    }
+
+    #notify li a img {
+        display: none;
+    }
+
+    .quotes article {
+        transform: scale(1);
+    }
+
+    .about .art2,
+    .about .art4,
+    .about .art3 {
+        transform: translateX(0vw);
+    }
+
+    .art1 {
+        height: 123vh;
+    }
+
+    .art2,
+    .art3,
+    .art4 {
+        height: 87vh;
+    }
+
+    .quotes {
+        height: 150vh;
+        width: 100vw;
+    }
+
+
+    .contactCyl {
+        font-size: 15px;
+        height: 155px;
+        top: 5%;
+        left: 70%;
+    }
+
+    .about h1 {
+        font-size: 30px;
+    }
+
+    article {
+        height: 97vh;
+        font-size: 15px;
+        text-align: right;
+    }
+
+
+
+    .op2 {
+        overflow: hidden;
+        height: 110vh;
+    }
+
+    article img {
+        width: 50%;
+    }
+
+    .op1 {
+        text-align: center;
+        width: 80vw;
+        height: 30vh;
+    }
+
+    .op2 div p {
+        text-align: right;
+    }
+
+    .op2 h2 {
+        font-size: 30px;
+    }
+
+    #message h1 {
+        font-size: 30px;
+    }
+
+    .container {
+        flex-direction: row;
+        width: 30vh;
+        height: 15vh;
+        margin: 0 auto;
+    }
+
+    .contact h1 {
+        margin-top: 150px;
+    }
+
+    .flexbitcontainer p {
+        font-size: 20px;
+    }
+
+
+    .envelop input,
+    textarea,
+    button {
+        width: 200px;
+        text-align: center;
+
+    }
+
+    .socials {
+        flex-direction: row;
+        width: 30vh;
+    }
+
+    .socials div span {
+        font-size: 13px;
+    }
+
+    .map {
+        width: 80vh;
+    }
+
+
+    .beffoot {
+        font-size: 20px;
+        width: 50vw;
+        height: 38vh;
+    }
+
+    .verify p {
+        width: 90vw;
+    }
+
+
+    .verify h1 {
+        width: 80vw;
+        margin: 0 auto;
+
+    }
+
+    footer {
+        width: 100vw;
+        height: 33vh;
+
+
+    }
+
+    footer p {
+        margin: 0 auto;
+        width: 87vw;
+        font-size: 20px;
+        text-align: center;
+
+
+    }
+
+    #returnTop li a img {
+        display: none;
+    }
+
+    .header h2 {
+        font-size: 30px;
+    }
+
+    .leftcolumn {
+        width: 100vh;
+        display: flex;
+        flex-direction: column
+    }
+
+
+    .card {
+        flex-basis: 100%;
+    }
+
+    .card .blog1 p {
+        margin-top: 0px;
+        height: 10vh;
+        width: 100vw;
+    }
+
+    .rightcolumn {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .kontakt {
+        word-wrap: break-word;
+        flex-basis: 100%;
+        flex-grow: 1;
+    }
+
+    .blogimg img {
+        width: 100vw;
+    }
+
+    .footer p {
+        font-size: 25px;
+    }
+
+
+}
+
+/* @media (max-width: 360px) {
+    .wrap {
+        display: flex;
+    }
+
+    header img {
+        display: none;
+    }
+
+    nav ul {
+        flex-direction: column;
+        flex-wrap: wrap;
+        padding: 0px;
+
+    }
+
+    nav ul li a {
+        font-size: 25px;
+        width: 100%;
+    }
+
+    html {
+        font-size: 35px;
+        overflow-y: scroll;
+    }
+
+    #notify li a img {
+        display: none;
+    }
+
+    .contactCyl {
+        font-size: 15px;
+        height: 155px;
+        top: 5%;
+        left: 70%;
+    }
+
+    .about h1 {
+        font-size: 30px;
+    }
+
+    article {
+        height: 65vh;
+        font-size: 30px;
+        text-align: right;
+    }
+
+    article img {
+        width: 50%;
+    }
+
+    .op1 {
+        text-align: center;
+        width: 80vw;
+        height: 30vh;
+        font-size: 30px;
+    }
+
+    .quotes article {
+        transform: scale(1);
+    }
+
+    .quotes {
+        height: 135vh;
+        width: 95vw;
+    }
+
+    .about .art2,
+    .about .art4,
+    .about .art3 {
+        transform: translateX(0vw);
+    }
+
+    .op1 p {
+        font-size: 35px;
+    }
+
+    .op1 select {
+        font-size: 15px;
+        width: 35vh;
+        height: 5vh;
+    }
+
+
+    .op2 div p {
+        text-align: right;
+        font-size: 25px;
+    }
+
+    .op2 h2 {
+        font-size: 30px;
+    }
+
+
+    #message h1 {
+        margin-top: 300px;
+        font-size: 30px;
+    }
+
+    .container {
+        flex-direction: row;
+        width: 50vh;
+        height: 20vh;
+        margin: 0 auto;
+    }
+
+    .envelop input,
+    textarea,
+    button {
+        margin-right: 60px;
+        width: 80vw;
+        text-align: center;
+
+    }
+
+    .socials {
+        flex-direction: row;
+        width: 100vw;
+        font-size: 15px;
+        margin: 0 auto;
+        margin-right: 20px;
+    }
+
+    .map {
+        width: 100vh;
+    }
+
+
+    .beffoot {
+        font-size: 20px;
+        width: 80vw;
+        height: 30vh;
+    }
+
+    .verify h1 {
+        width: 100vw;
+        height: 10vh;
+
+    }
+
+    .verify p {
+        width: 80vw;
+        font-size: 20px;
+        height: 30vh;
+
+    }
+
+    footer {
+        height: 37vh;
+        width: 100vw;
+        margin-top: 10px;
+    }
+
+    footer p {
+        justify-content: center;
+        width: 85vw;
+        font-size: 20px;
+        text-align: center;
+    }
+
+    #returnTop li a img {
+        display: none;
+    }
+
+    .header h2 {
+        font-size: 30px;
+    }
+
+    .leftcolumn {
+        width: 100vh;
+        display: flex;
+        flex-direction: column
+    }
+
+
+    .card {
+        flex-basis: 100%;
+    }
+
+    .card .blog1 p {
+        margin-top: 0px;
+        height: 10vh;
+        width: 100vw;
+    }
+
+    .rightcolumn {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .kontakt {
+        word-wrap: break-word;
+        flex-basis: 100%;
+        flex-grow: 1;
+    }
+
+    .blogimg img {
+        width: 100vw;
+    }
+
+    .footer {
+        font-size: 15px;
+    }
+
+} */
+
+@media (min-width:380px) and (max-width:639px) {
+    .wrap {
+        display: flex;
+    }
+
+    header img {
+        display: none;
+    }
+
+    nav ul {
+        flex-direction: column;
+        flex-wrap: wrap;
+        padding: 0px;
+
+    }
+
+    nav ul li a {
+        font-size: 25px;
+        width: 100%;
+    }
+
+    html {
+        font-size: 35px;
+        overflow-y: scroll;
+    }
+
+    #notify li a img {
+        display: none;
+    }
+
+    .contactCyl {
+        font-size: 15px;
+        height: 155px;
+        top: 5%;
+        left: 70%;
+    }
+
+    .about h1 {
+        font-size: 30px;
+    }
+
+    article {
+        height: 95vh;
+        font-size: 30px;
+        text-align: right;
+    }
+
+    article img {
+        width: 50%;
+    }
+
+    .op1 {
+        text-align: center;
+        width: 80vw;
+        height: 40vh;
+        font-size: 30px;
+    }
+
+    .quotes article {
+        transform: scale(1);
+    }
+
+    .quotes {
+        height: 140vh;
+        width: 95vw;
+    }
+
+    .about .art1 {
+        height: 87vh;
+    }
+
+    .about .art2,
+    .about .art4,
+    .about .art3 {
+        transform: translateX(0vw);
+        height: 75vh;
+    }
+
+    .op1 p {
+        font-size: 35px;
+    }
+
+    .op1 select {
+        font-size: 15px;
+        width: 35vh;
+        height: 5vh;
+    }
+
+    .op2 div p {
+        text-align: right;
+        font-size: 25px;
+    }
+
+    .op2 h2 {
+        font-size: 30px;
+    }
+
+
+    #message h1 {
+        font-size: 30px;
+    }
+
+
+    .container {
+        flex-direction: row;
+        width: 30vh;
+        height: 10vh;
+        margin: 0 auto;
+    }
+
+    section {
+        margin-top: 250px;
+    }
+
+    .envelop input,
+    textarea,
+    button {
+        margin: 10px auto;
+        width: 55vw;
+        text-align: center;
+
+    }
+
+    .socials {
+        flex-direction: row;
+        width: 70vw;
+        font-size: 18px;
+        margin: 0 auto;
+    }
+
+    .map {
+        width: 100vh;
+    }
+
+
+    .beffoot {
+        font-size: 20px;
+        width: 70vw;
+        height: 30vh;
+    }
+
+    .verify h1 {
+        margin: 0 auto;
+        width: 100vw;
+        height: 10vh;
+
+    }
+
+    footer {
+        height: 37vh;
+        width: 90vw;
+        margin-top: 10px;
+    }
+
+    footer p {
+        justify-content: center;
+        width: 90vw;
+        font-size: 25px;
+        text-align: center;
+    }
+
+    #returnTop li a img {
+        display: none;
+    }
+
+    .header h2 {
+        font-size: 30px;
+    }
+
+    .leftcolumn {
+        width: 100vh;
+        display: flex;
+        flex-direction: column
+    }
+
+
+    .card {
+        flex-basis: 100%;
+    }
+
+    .card .blog1 p {
+        margin-top: 0px;
+        height: 10vh;
+        width: 100vw;
+    }
+
+    .rightcolumn {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .kontakt {
+        word-wrap: break-word;
+        flex-basis: 100%;
+        flex-grow: 1;
+    }
+
+    .blogimg img {
+        width: 100vw;
+    }
+
+    .footer {
+        font-size: 15px;
+    }
+}
+
+
+@media (min-width:640px) and (max-width:820px) {
+    .wrap {
+        display: flex;
+    }
+
+    header img {
+        display: none;
+    }
+
+    nav ul {
+        flex-direction: column;
+        flex-wrap: wrap;
+        padding: 0px;
+
+    }
+
+    nav ul li a {
+        font-size: 40px;
+        width: 100%;
+    }
+
+    html {
+        font-size: 35px;
+        overflow-y: scroll;
+    }
+
+    #notify li a img {
+        display: none;
+    }
+
+    .contactCyl {
+        font-size: 20px;
+        height: 200px;
+        width: 120px;
+        top: 5%;
+        left: 85%;
+    }
+
+    .about h1 {
+        font-size: 30px;
+    }
+
+    article {
+        height: 105vh;
+        font-size: 40px;
+        text-align: right;
+    }
+
+    .about p {
+        font-size: 30px;
+    }
+
+    article img {
+        width: 50%;
+    }
+
+    .op1 {
+        text-align: center;
+        width: 80vw;
+        height: 30vh;
+        font-size: 30px;
+    }
+
+    .quotes article {
+        transform: scale(1);
+    }
+
+    .quotes {
+        height: 150vh;
+    }
+
+    .about .art2,
+    .about .art4,
+    .about .art3 {
+        transform: translateX(0vw);
+    }
+
+    .op1 {
+        height: 45vh;
+    }
+
+    .op1 p {
+        font-size: 35px;
+    }
+
+    .op1 img {
+        width: 90vw;
+
+    }
+
+    .op1 select {
+        font-size: 15px;
+        width: 35vw;
+        height: 5vh;
+    }
+
+    .op2 {
+        height: 30vh;
+    }
+
+
+    .op2 div p {
+        text-align: right;
+        font-size: 25px;
+    }
+
+    .op2 h2 {
+        margin-top: 100px;
+        font-size: 30px;
+    }
+
+
+    #message h1 {
+        font-size: 30px;
+    }
+
+    .container {
+        flex-direction: row;
+        width: 50vh;
+        height: 10vh;
+        margin: 0 auto;
+    }
+
+    .envelop input,
+    textarea,
+    button {
+        width: 80vw;
+        text-align: center;
+        height: 5vh;
+
+    }
+
+    .socials {
+        flex-direction: row;
+        width: 100vh;
+        font-size: 18px;
+        margin-right: 65px;
+    }
+
+    .socials div span,
+    .socials div a {
+        font-size: 25px;
+    }
+
+    .map {
+        width: 100vh;
+    }
+
+
+    .beffoot {
+        font-size: 20px;
+        width: 80vw;
+        height: 65vh;
+        font-size: 35px;
+    }
+
+    .verify h1 {
+        width: 100vw;
+        height: 10vh;
+
+    }
+
+    footer {
+        height: 25vh;
+        width: 100vw;
+        margin-top: 10px;
+    }
+
+    footer p {
+        margin: 0 auto;
+        justify-content: center;
+        width: 80vw;
+        font-size: 25px;
+        text-align: center;
+    }
+
+    #returnTop li a img {
+        display: none;
+    }
+
+    .header h2 {
+        font-size: 40px;
+    }
+
+    .leftcolumn {
+        width: 100vw;
+        height: 200vh;
+        display: flex;
+        flex-direction: column
+    }
+
+
+    .card {
+        flex-basis: 100%;
+    }
+
+    .card p {
+        margin-top: 100px;
+        font-size: 25px;
+    }
+
+
+    .rightcolumn {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .kontakt {
+        margin: 0 auto;
+        width: 90vw;
+        word-wrap: break-word;
+        flex-basis: 100%;
+        flex-grow: 1;
+    }
+
+    .rightcolumn {
+        width: 90vw;
+    }
+
+    .blogimg img {
+        width: 100vw;
+    }
+
+    .footer {
+        font-size: 25px;
+    }
+
+}
+
+@media (min-width:821px) and (max-width:1024px) {
+    .wrap {
+        display: flex;
+    }
+
+    header img {
+        display: none;
+    }
+
+    nav ul {
+        flex-direction: column;
+        flex-wrap: wrap;
+        padding: 0px;
+
+    }
+
+    nav ul li a {
+        font-size: 40px;
+        width: 100%;
+    }
+
+    html {
+        font-size: 35px;
+        overflow-y: scroll;
+    }
+
+    #notify li a img {
+        display: none;
+    }
+
+    .contactCyl {
+        font-size: 20px;
+        height: 200px;
+        width: 120px;
+        top: 5%;
+        left: 85%;
+    }
+
+    .about h1 {
+        font-size: 30px;
+    }
+
+    article {
+        height: 105vh;
+        font-size: 40px;
+        text-align: right;
+    }
+
+    .about p {
+        font-size: 30px;
+    }
+
+    article img {
+        width: 50%;
+    }
+
+    .op1 {
+        text-align: center;
+        width: 80vw;
+        height: 30vh;
+        font-size: 30px;
+    }
+
+    .quotes article {
+        transform: scale(1);
+    }
+
+    .quotes {
+        height: 150vh;
+    }
+
+    .about .art2,
+    .about .art4,
+    .about .art3 {
+        transform: translateX(0vw);
+    }
+
+    .op1 {
+        height: 45vh;
+    }
+
+    .op1 p {
+        font-size: 35px;
+    }
+
+    .op1 img {
+        width: 90vw;
+
+    }
+
+    .op1 select {
+        font-size: 15px;
+        width: 35vw;
+        height: 5vh;
+    }
+
+    .op2 {
+        height: 30vh;
+    }
+
+
+    .op2 div p {
+        text-align: right;
+        font-size: 25px;
+    }
+
+    .op2 h2 {
+        margin-top: 100px;
+        font-size: 30px;
+    }
+
+
+    #message h1 {
+        font-size: 30px;
+    }
+
+    .container {
+        flex-direction: row;
+        width: 50vh;
+        height: 10vh;
+        margin: 0 auto;
+    }
+
+    .contact {
+        margin-top: 200px;
+    }
+
+    .envelop input,
+    textarea,
+    button {
+        width: 80vw;
+        text-align: center;
+        height: 5vh;
+
+    }
+
+    .socials {
+        flex-direction: row;
+        width: 100vh;
+        font-size: 18px;
+        margin-right: 65px;
+    }
+
+    .socials div span,
+    .socials div a {
+        font-size: 25px;
+    }
+
+    .map {
+        width: 100vh;
+    }
+
+
+    .beffoot {
+        font-size: 20px;
+        width: 80vw;
+        height: 65vh;
+        font-size: 35px;
+    }
+
+    .verify h1 {
+        width: 100vw;
+        height: 10vh;
+
+    }
+
+    footer {
+        height: 25vh;
+        width: 100vw;
+        margin-top: 10px;
+    }
+
+    footer p {
+        margin: 0 auto;
+        justify-content: center;
+        width: 80vw;
+        font-size: 25px;
+        text-align: center;
+    }
+
+    #returnTop li a img {
+        display: none;
+    }
+
+    .header h2 {
+        font-size: 40px;
+    }
+
+    .leftcolumn {
+        width: 100vw;
+        height: 200vh;
+        display: flex;
+        flex-direction: column
+    }
+
+
+    .card {
+        flex-basis: 100%;
+    }
+
+    .card p {
+        margin-top: 100px;
+        font-size: 25px;
+    }
+
+
+    .rightcolumn {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .kontakt {
+        margin: 0 auto;
+        width: 90vw;
+        word-wrap: break-word;
+        flex-basis: 100%;
+        flex-grow: 1;
+    }
+
+    .rightcolumn {
+        width: 90vw;
+    }
+
+    .blogimg img {
+        width: 100vw;
+    }
+
+    .footer {
+        font-size: 25px;
+    }
+
+}
+
+@media screen and (max-width: 800px) {
+
+    .leftcolumn,
+    .rightcolumn {
+        width: 100%;
+        padding: 0;
+    }
+}
+
+@media (min-width:1024px) and (max-width:1040px) {
+
+    .wrap {
+        display: flex;
+    }
+
+    header img {
+        display: none;
+    }
+
+    nav ul {
+        flex-direction: column;
+        flex-wrap: wrap;
+        padding: 0px;
+
+    }
+
+    nav ul li a {
+        font-size: 40px;
+        width: 100%;
+    }
+
+    html {
+        font-size: 35px;
+        overflow-y: scroll;
+    }
+
+    #notify li a img {
+        display: none;
+    }
+
+    .contactCyl {
+        border-radius: 10%;
+        font-size: 20px;
+        height: 150px;
+        width: 220px;
+        top: 2%;
+        left: 75%;
+    }
+
+    .about h1 {
+        font-size: 40px;
+    }
+
+    article {
+        height: 125vh;
+        font-size: 40px;
+        text-align: right;
+    }
+
+    .about p {
+        font-size: 35px;
+    }
+
+    article img {
+        width: 50%;
+    }
+
+    .op1 {
+        text-align: center;
+        width: 90vw;
+        height: 75vh;
+        font-size: 35px;
+    }
+
+    .quotes article {
+        transform: scale(1);
+    }
+
+    .about .art2,
+    .about .art4,
+    .about .art3 {
+        transform: translateX(0vw);
+    }
+
+    .op1 p {
+        font-size: 35px;
+    }
+
+    .op1 img {
+        width: 90vw;
+
+    }
+
+    .op1 select {
+        font-size: 25px;
+        width: 55vw;
+        height: 10vh;
+    }
+
+    .op2 {
+        height: 60vh;
+    }
+
+
+    .op2 div p {
+        text-align: right;
+        font-size: 30px;
+    }
+
+    .op2 h2 {
+        margin-top: 100px;
+        font-size: 35px;
+    }
+
+
+    #message h1 {
+        font-size: 30px;
+    }
+
+    .container {
+        flex-direction: row;
+        width: 60vh;
+        height: 10vh;
+        margin: 0 auto;
+    }
+
+
+    .envelop input,
+    textarea,
+    button {
+        width: 70vw;
+        text-align: center;
+        height: 7vh;
+        font-size: 25px;
+
+    }
+
+    .socials {
+        margin-top: 50px;
+        flex-direction: row;
+        width: 90vw;
+        font-size: 18px;
+        margin-right: 65px;
+    }
+
+    .socials div span,
+    .socials div a {
+        font-size: 30px;
+    }
+
+    .map {
+        width: 100vh;
+    }
+
+
+    .beffoot {
+        font-size: 35px;
+        width: 80vw;
+        height: 35vh;
+        font-size: 35px;
+    }
+
+    .verify h1 {
+        width: 90vw;
+        height: 10vh;
+
+    }
+
+    footer {
+        height: 25vh;
+        width: 100vw;
+        margin-top: 10px;
+    }
+
+    footer p {
+        margin: 0 auto;
+        justify-content: center;
+        width: 85vw;
+        font-size: 29px;
+        text-align: center;
+    }
+
+    #returnTop li a img {
+        display: none;
+    }
+
+    .header h2 {
+        font-size: 40px;
+    }
+
+    .leftcolumn {
+        width: 100vw;
+        height: 410vh;
+        display: flex;
+        flex-direction: column
+    }
+
+
+    .card {
+        flex-basis: 100%;
+    }
+
+    .blog1 a img {
+        width: 50vw;
+    }
+
+
+    .card p {
+        margin-top: 150px;
+        font-size: 30px;
+    }
+
+    .rightcolumn {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .kontakt {
+        margin: 0 auto;
+        width: 80vw;
+        word-wrap: break-word;
+        flex-basis: 100%;
+        flex-grow: 1;
+    }
+
+    .rightcolumn {
+        width: 90vw;
+    }
+
+    .blogimg a img {
+        width: 50vw;
+    }
+
+    .footer {
+        font-size: 25px;
+    }
+
+}
+
+/* 
+@media (max-width: 1280px) {
+    .wrap {
+        display: flex;
+    }
+
+    header img {
+        display: none;
+    }
+
+    nav ul {
+        flex-direction: column;
+        flex-wrap: wrap;
+        padding: 0px;
+
+    }
+
+    nav ul li a {
+        font-size: 40px;
+        width: 100%;
+    }
+
+    html {
+        font-size: 35px;
+        overflow-y: scroll;
+    }
+
+    #notify li a img {
+        display: none;
+    }
+
+    .contactCyl {
+        border-radius: 10%;
+        font-size: 20px;
+        height: 150px;
+        width: 220px;
+        top: 2%;
+        left: 75%;
+    }
+
+    .about h1 {
+        font-size: 40px;
+    }
+
+    article {
+        height: 125vh;
+        font-size: 40px;
+        text-align: right;
+    }
+
+    .about p {
+        font-size: 35px;
+    }
+
+    article img {
+        width: 50%;
+    }
+
+    .op1 {
+        text-align: center;
+        width: 90vw;
+        height: 75vh;
+        font-size: 35px;
+    }
+
+    .quotes article {
+        transform: scale(1);
+    }
+
+    .about .art2,
+    .about .art4,
+    .about .art3 {
+        transform: translateX(0vw);
+    }
+
+    .op1 p {
+        font-size: 35px;
+    }
+
+    .op1 img {
+        width: 90vw;
+
+    }
+
+    .op1 select {
+        font-size: 25px;
+        width: 55vw;
+        height: 10vh;
+    }
+
+    .op2 {
+        height: 60vh;
+    }
+
+
+    .op2 div p {
+        text-align: right;
+        font-size: 30px;
+    }
+
+    .op2 h2 {
+        margin-top: 100px;
+        font-size: 35px;
+    }
+
+
+    #message h1 {
+        font-size: 30px;
+    }
+
+    .container {
+        flex-direction: row;
+        width: 60vh;
+        height: 10vh;
+        margin: 0 auto;
+    }
+
+    .envelop input,
+    textarea,
+    button {
+        width: 70vw;
+        text-align: center;
+        height: 7vh;
+        font-size: 25px;
+
+    }
+
+    .socials {
+        margin-top: 50px;
+        flex-direction: row;
+        width: 90vw;
+        font-size: 18px;
+        margin-right: 65px;
+    }
+
+    .socials div span,
+    .socials div a {
+        font-size: 30px;
+    }
+
+    .map {
+        width: 100vh;
+    }
+
+
+    .beffoot {
+        font-size: 35px;
+        width: 80vw;
+        height: 35vh;
+        font-size: 35px;
+    }
+
+    .verify h1 {
+        width: 90vw;
+        height: 10vh;
+
+    }
+
+    footer {
+        height: 25vh;
+        width: 100vw;
+        margin-top: 10px;
+    }
+
+    footer p {
+        margin: 0 auto;
+        justify-content: center;
+        width: 85vw;
+        font-size: 29px;
+        text-align: center;
+    }
+
+    #returnTop li a img {
+        display: none;
+    }
+
+    .header h2 {
+        font-size: 40px;
+    }
+
+    .leftcolumn {
+        width: 100vw;
+        height: 410vh;
+        display: flex;
+        flex-direction: column
+    }
+
+
+    .card {
+        flex-basis: 100%;
+    }
+
+    .blog1 a img {
+        width: 50vw;
+    }
+
+
+    .card p {
+        margin-top: 150px;
+        font-size: 30px;
+    }
+
+    .rightcolumn {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .kontakt {
+        margin: 0 auto;
+        width: 80vw;
+        word-wrap: break-word;
+        flex-basis: 100%;
+        flex-grow: 1;
+    }
+
+    .rightcolumn {
+        width: 90vw;
+    }
+
+    .blogimg a img {
+        width: 50vw;
+    }
+
+    .footer {
+        font-size: 25px;
+    }
+} */
